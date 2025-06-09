@@ -11,8 +11,8 @@ interface TodoListProps {
 
 export const TodoList: React.FC<TodoListProps> = ({
   todos,
-  onClickSetUserId = () => {},
-  onClickSetTodo = () => {},
+  onClickSetUserId,
+  onClickSetTodo,
   oneTodoForCheck,
 }) => {
   const handleShowModalWindow = (userId: number, todo: Todo) => {
