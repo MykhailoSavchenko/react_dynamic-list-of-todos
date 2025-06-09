@@ -9,8 +9,8 @@ interface TodoFilterProps {
 
 export const TodoFilter: React.FC<TodoFilterProps> = ({
   search,
-  onChangeInput = () => {},
-  chooseStatus = () => {},
+  onChangeInput,
+  chooseStatus,
 }) => {
   return (
     <form className="field has-addons">

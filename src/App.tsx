@@ -22,7 +22,7 @@ const prepareTodo = (todos: Todo[], filter: Filter): Todo[] => {
   if (filter.search !== '') {
     const normalizeSearch = filter.search.trim().toLowerCase();
 
-    preparedTodo = todos.filter(todo =>
+    preparedTodo = preparedTodo.filter(todo =>
       todo.title.toLowerCase().includes(normalizeSearch),
     );
   }

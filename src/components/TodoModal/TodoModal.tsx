@@ -13,7 +13,7 @@ interface TodoModalProps {
 export const TodoModal: React.FC<TodoModalProps> = ({
   userId,
   todo,
-  closeModalWindow = () => {},
+  closeModalWindow,
 }) => {
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState<User | null>(null);
